@@ -1,27 +1,17 @@
 pub fn find(haystack: &[i32], needle: i32) -> Option<usize> {
-    let number_of_elements = haystack.len();
     let mut index = 0;
-    let mut length = number_of_elements;
-    let mut count = 0;
+    let mut length = haystack.len();
 
     while length > 0 {
-        println!("Loop count {} with index {} and length {}", count, index, length);
-        let middle = index + (length / 2);
-        println!("Middle: {}", middle);
+        let half = (length / 2);
+        let middle = index + half;
         if haystack[middle].eq(&needle) {
-            println!("Found correct value, returning {}", middle);
             return Some(middle)
+        } else if needle > haystack[middle] {
+            index = middle + 1;
         }
-        if needle < haystack[middle] {
-            println!("{} is less than {} therefore to to left side", needle, haystack[middle]);
-            length = (length / 2);
-        } else {
-            println!("{} is greater than {} therefore to to right side", needle, haystack[middle]);
-            index = middle + 1; //5
-            length = (length / 2)
-        }
-
-        count += 1;
+        length = half;
     }
+
     None
 }
