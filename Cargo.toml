@@ -2,6 +2,7 @@
 edition = "2018"
 name = "binary-search"
 version = "1.3.0"
+doctest = false
 
 [dependencies]
 

@@ -4,7 +4,7 @@ pub fn find(haystack: &[i32], needle: i32) -> Option<usize> {
     let mut length = number_of_elements;
     let mut count = 0;
 
-    while count < 5 {
+    while count < 15 {
         println!("Loop count {} with index {} and length {}", count, index, length);
         let middle = index + (length / 2);
         println!("Middle: {}", middle);
@@ -19,6 +19,10 @@ pub fn find(haystack: &[i32], needle: i32) -> Option<usize> {
             println!("{} is greater than {} therefore to to right side", needle, haystack[middle]);
             index = middle + 1; //5
             length = (length / 2)
+        }
+
+        if length == 0 {
+            return None
         }
         count += 1;
     }
