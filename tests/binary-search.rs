@@ -11,7 +11,6 @@ fn finds_first_value_in_an_array_with_two_element() {
 }
 
 #[test]
-#[ignore]
 fn finds_second_value_in_an_array_with_two_element() {
     assert_eq!(find(&[1, 2], 2), Some(1));
 }
