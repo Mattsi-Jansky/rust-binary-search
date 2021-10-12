@@ -1,7 +1,8 @@
 # Binary Search
 
-Welcome to Binary Search on Exercism's Rust Track.
-If you need help running the tests or submitting your code, check out `HELP.md`.
+## Credit
+
+This implementation developed as part of a Mob Programming exercise with [ikatzarski](https://github.com/orgs/codurance/people/ikatzarski), [jfacchini](https://github.com/orgs/codurance/people/jfacchini), [TomSpencerLondon](https://github.com/orgs/codurance/people/TomSpencerLondon) and [Mattsi-Jansky](https://github.com/Mattsi-Jansky) at the Codurance Rust Study Group.
 
 ## Instructions
 
