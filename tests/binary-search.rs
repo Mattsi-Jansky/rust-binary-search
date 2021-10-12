@@ -16,19 +16,16 @@ fn finds_second_value_in_an_array_with_two_element() {
 }
 
 #[test]
-#[ignore]
 fn finds_a_value_in_the_middle_of_an_array() {
     assert_eq!(find(&[1, 3, 4, 6, 8, 9, 11], 6), Some(3));
 }
 
 #[test]
-#[ignore]
 fn finds_a_value_at_the_beginning_of_an_array() {
     assert_eq!(find(&[1, 3, 4, 6, 8, 9, 11], 1), Some(0));
 }
 
 #[test]
-#[ignore]
 fn finds_a_value_at_the_end_of_an_array() {
     assert_eq!(find(&[1, 3, 4, 6, 8, 9, 11], 11), Some(6));
 }
